@@ -52,6 +52,7 @@ namespace fruitshop
                 (priceBanana - costBanana) * decisionBanana
             );
 
+            //Test to optimize weight capacity
             /*model.AddGoal("GoalWeight", GoalKind.Maximize,
                 weightApple * decisionApple +
                 weightPear * decisionPear +
@@ -79,16 +80,42 @@ namespace fruitshop
 
             double totalweight = decisionApple.GetDouble() * weightApple + decisionPear.GetDouble() * weightPear + decisionBanana.GetDouble() * weightBanana;
             double totalCost = decisionApple.GetDouble() * costApple + decisionPear.GetDouble() * costPear + decisionBanana.GetDouble() * costBanana;
+            double totalProfit = decisionApple.GetDouble() * (priceApple - costApple) + decisionPear.GetDouble() * (pricePear - costPear) + decisionBanana.GetDouble() * (priceBanana - costBanana);
+
+            Console.WriteLine("Constraint Satisfaction Problem - Microsoft Solver Foundation");
+            Console.WriteLine("");
+
+            Console.WriteLine("Fruit retailer");
+            Console.WriteLine("");
+
+            Console.WriteLine("Apple: cost {0}, price {1}, weight {2}", costApple, priceApple, weightApple);
+            Console.WriteLine("Pear:  cost {0}, price {1}, weight {2}", costPear, pricePear, weightPear);
+            Console.WriteLine("Apple: cost {0}, price {1}, weight {2}", costBanana, priceBanana, weightBanana);
+            Console.WriteLine("");
+
+            Console.WriteLine("Maximal budget: {0}", budget);
+            Console.WriteLine("Maximal weight capacity: {0}", weightCapacity);
+            Console.WriteLine("");
+
+            Console.WriteLine("******************************************************");
+            Console.WriteLine("");
+
+            Console.WriteLine("Solve the problem");
+            Console.WriteLine("Load truck with fruit to MAXIMIZE profit");
+            Console.WriteLine("");
 
             Console.WriteLine("Apple = " + decisionApple.GetDouble());
             Console.WriteLine("Pear = " + decisionPear.GetDouble());
             Console.WriteLine("Banana = " + decisionBanana.GetDouble());
-            Console.WriteLine("__________________");
+            Console.WriteLine("");
 
             Console.WriteLine("Total Weight = {0} ", totalweight);
             Console.WriteLine("Total Cost = {0} ", totalCost);
+            Console.WriteLine("Total Profit = {0} ", totalProfit);
+            Console.WriteLine("");
 
-            Console.WriteLine("__________________");
+            Console.WriteLine("*****************************************************");
+            Console.WriteLine("");
             Console.WriteLine("Solution quality: " + solution.Quality);
 
             Console.ReadLine();
