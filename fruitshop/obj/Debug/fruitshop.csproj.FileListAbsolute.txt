@@ -1,0 +1,6 @@
+C:\stan\dev\c#\constraint-satisfaction-problem\Microsoft-Solver-Foundation\fruitshop\fruitshop\bin\Debug\fruitshop.exe
+C:\stan\dev\c#\constraint-satisfaction-problem\Microsoft-Solver-Foundation\fruitshop\fruitshop\bin\Debug\fruitshop.pdb
+C:\stan\dev\c#\constraint-satisfaction-problem\Microsoft-Solver-Foundation\fruitshop\fruitshop\obj\Debug\fruitshop.csprojResolveAssemblyReference.cache
+C:\stan\dev\c#\constraint-satisfaction-problem\Microsoft-Solver-Foundation\fruitshop\fruitshop\obj\Debug\fruitshop.csproj.CoreCompileInputs.cache
+C:\stan\dev\c#\constraint-satisfaction-problem\Microsoft-Solver-Foundation\fruitshop\fruitshop\obj\Debug\fruitshop.exe
+C:\stan\dev\c#\constraint-satisfaction-problem\Microsoft-Solver-Foundation\fruitshop\fruitshop\obj\Debug\fruitshop.pdb
